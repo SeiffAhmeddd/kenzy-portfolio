@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Beauty Portfolio | UGC Creator</title>
+    <meta name="description" content="UGC creator specializing in hair care, beauty routines, and luxury product storytelling for the modern woman.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="glass" id="main-nav">
+        <div class="container nav-content">
+            <a href="#" class="logo heading-serif">Kenzy Mohamed</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact" class="btn btn-primary btn-sm"><span>Let's Create</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section section" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text reveal">
+                <h1 class="display-lg">Your Brand.<br><span class="italic">Elevated</span> Through Beauty.</h1>
+                <p class="hero-subtext">UGC creator specializing in hair care, beauty routines, and product storytelling for the modern woman.</p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary"><span>View Portfolio</span></a>
+                    <a href="#contact" class="btn btn-outline">Enquire Now</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal">
+                <div class="hero-image-container">
+                    <img src="images/1.jpeg" alt="Luxe beauty storytelling" id="hero-img">
+                    <div class="hero-accent-box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section" id="about">
+        <div class="container">
+            <div class="asymmetric-grid">
+                <div class="about-image-wrapper reveal col-span-5">
+                    <img src="images/WhatsApp Image 2026-04-04 at 1.01.43 AM.jpeg" alt="Meet Your Beauty Creator" class="about-img">
+                </div>
+                <div class="about-content reveal col-span-7">
+                    <h2 class="section-title">Meet Your Beauty Creator</h2>
+                    <p class="premium-text">I bridge the gap between high-end editorial aesthetics and the authentic, relatable voice of social media. With a background in aesthetic storytelling, I curate content that doesn't just showcase a product, but evokes a feeling.</p>
+                    <blockquote class="editorial-quote">
+                        "Beauty is not just what we see, it is the intentionality behind the ritual."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Bespoke Content Solutions</h2>
+                <p class="section-subtitle">Tailored visual strategy for beauty brands.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><img src="images/cover.jpeg" alt="Haircare Demos"></div>
+                    <h3>Haircare</h3>
+                    <p>Step-by-step styling rituals and deep-conditioning routines filmed in high-definition light.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><img src="images/service-review.png" alt="Product Reviews"></div>
+                    <h3>Product Reviews</h3>
+                    <p>Honest, aesthetic first impressions and detailed ingredient storytelling that builds trust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title reveal">Curating Moments.</h2>
+            <div class="reels-grid">
+                <!-- Reel Item 1 -->
+                <div class="reel-item reveal">
+                    <div class="reel-video-container">
+                        <video class="reel-video" loop muted playsinline poster="covers/1.jpeg">
+                            <source src="videos/ssstik.io_@kenzymuhamedd__1775266534319.mp4" type="video/mp4">
+                        </video>
+                        <div class="reel-overlay glass">
+                            <div class="reel-info">
+                                <span class="reel-category">Review</span>
+                                <h3>Hair Mask</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reel Item 2 -->
+                <div class="reel-item reveal">
+                    <div class="reel-video-container">
+                        <video class="reel-video" loop muted playsinline poster="covers/2.jpeg">
+                            <source src="videos/ssstik.io_@kenzymuhamedd__1775266601882.mp4" type="video/mp4">
+                        </video>
+                        <div class="reel-overlay glass">
+                            <div class="reel-info">
+                                <span class="reel-category">Hair Care</span>
+                                <h3>Hair Ritual</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reel Item 3 -->
+                <div class="reel-item reveal">
+                    <div class="reel-video-container">
+                        <video class="reel-video" loop muted playsinline poster="covers/3.jpeg">
+                            <source src="videos/ssstik.io_@kenzymuhamedd__1775266643345.mp4" type="video/mp4">
+                        </video>
+                        <div class="reel-overlay glass">
+                            <div class="reel-info">
+                                <span class="reel-category">Tutorial</span>
+                                <h3>Wavy Hair</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reel Item 4 -->
+                <div class="reel-item reveal">
+                    <div class="reel-video-container">
+                        <video class="reel-video" loop muted playsinline poster="covers/4.jpeg">
+                            <source src="videos/ssstik.io_@kenzymuhamedd__1775266692464.mp4" type="video/mp4">
+                        </video>
+                        <div class="reel-overlay glass">
+                            <div class="reel-info">
+                                <span class="reel-category">Review</span>
+                                <h3>Hair Oils</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title reveal">Voices of Trust.</h2>
+            <div class="testimonials-slider reveal">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I love how real and genuine your reviews are they feel so natural and honest."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Dr Mayar</span>
+                        <span class="author-role">Founder</span>
+                        <span class="author-brand">Mava</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h2 class="display-sm">Let's Create Together</h2>
+                    <p>Now opening bookings for upcoming 2026 campaigns. Reach out anytime to check availability.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/kenzymuhamedd/" target="_blank">Instagram</a>
+                        <a href="https://www.tiktok.com/@kenzymuhamedd_" target="_blank">TikTok</a>
+                        <a href="mailto:kenzymohamedd.hassan@gmail.com">Email</a>
+                    </div>
+                </div>
+                <div class="contact-form reveal">
+                    <form id="campaign-form" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="brand" placeholder="Brand Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Work Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell me about your vision..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><span>Send Inquiry</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Kenzy Mohamed.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
