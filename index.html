@@ -100,8 +100,12 @@
     <section class="portfolio-section section" id="portfolio">
         <div class="container">
             <h2 class="section-title reveal">Curating Moments.</h2>
-            <div class="reels-grid">
-                <!-- Reel Item 1 -->
+            <div class="reels-wrapper reveal">
+                <button class="slider-btn prev-btn" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <div class="reels-grid">
+                    <!-- Reel Item 1 -->
                 <div class="reel-item reveal">
                     <div class="reel-video-container">
                         <video class="reel-video" loop muted playsinline poster="covers/1.jpeg">
@@ -172,6 +176,9 @@
                     </div>
                 </div>
             </div>
+            <button class="slider-btn next-btn" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
         </div>
     </section>
 

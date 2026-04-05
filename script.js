@@ -170,4 +170,33 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+    // 9. Slider controls for Reels Grid
+    const reelsGrid = document.querySelector('.reels-grid');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    if (reelsGrid && prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            const itemWidth = reelsGrid.children[0].offsetWidth + 24; 
+            
+            // Linear, constant speed slide
+            gsap.to(reelsGrid, {
+                scrollLeft: reelsGrid.scrollLeft - itemWidth,
+                duration: 0.25,
+                ease: 'none' // GSAP's equivalent of linear
+            });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const itemWidth = reelsGrid.children[0].offsetWidth + 24;
+
+            // Linear, constant speed slide
+            gsap.to(reelsGrid, {
+                scrollLeft: reelsGrid.scrollLeft + itemWidth,
+                duration: 0.25,
+                ease: 'none' // GSAP's equivalent of linear
+            });
+        });
+    }
 });
